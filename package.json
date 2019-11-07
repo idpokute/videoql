@@ -1,0 +1,9 @@
+{
+  "name": "videoql",
+  "version": "1.0.0",
+  "description": "Video Directory using GraphQL",
+  "main": "index.js",
+  "repository": "https://github.com/idpokute/videoql",
+  "author": "idpokute",
+  "license": "MIT"
+}
