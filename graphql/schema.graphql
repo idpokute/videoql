@@ -1,0 +1,28 @@
+# my Custom Type
+type Video {
+  id: Int
+  title: String!
+  state: String!
+  date: String!
+}
+
+type Movie {
+  id: Int
+  title: String!
+  rating: Float!
+  summary: String!
+  language: String!
+  medium_cover_image: String!
+}
+
+type Query {
+  name: String!
+  video(id: Int!): Video # do not add ! because there is the case return 0
+  videos: [Video]!
+  movies(limit: Int, rating: Float): [Movie]!
+}
+
+type Mutation {
+  addVideo(title: String!, state: String!, date: String!): [Video]!
+  deleteVideo(id: Int!): Boolean!
+}
